@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeu : Devine le nombre</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Devine le nombre !</h1>
+    <p>Entre 1 et 100</p>
+    <div class="status">
+      <span>Temps : <span id="timer">0</span>s</span>
+      <span>Essais : <span id="attempts">0</span></span>
+    </div>
+    <input type="number" id="guessInput" min="1" max="100" />
+    <button onclick="checkGuess()">Deviner</button>
+    <p id="message"></p>
+    <button onclick="resetGame()">Rejouer</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
